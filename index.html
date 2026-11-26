@@ -216,6 +216,19 @@
   .vs-box p { color: var(--ink-soft); font-size: .92rem; }
   .vs-mid { display: grid; place-items: center; font-weight: 700; font-size: 1.6rem; color: var(--accent); }
 
+  /* hobby: 요즘 빠진 것 */
+  .hobby { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .hobby .item {
+    grid-template-columns: 56px 1fr; align-items: start;
+    background: #F3FAFE; border: 0; border-radius: 18px; padding: 16px;
+  }
+  .hobby .ico { width: 56px; height: 56px; background: #E3F3FC; }
+  .hobby .tag {
+    display: inline-block; margin-bottom: 4px;
+    font-size: .75rem; font-weight: 700; color: #fff;
+    background: var(--accent); border-radius: 999px; padding: 2px 8px;
+  }
+
   /* inventory */
   .inventory { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
   .slot {
@@ -299,6 +312,7 @@
     .row3 { grid-template-columns: 1fr 1fr; }
     .row3 > :last-child { grid-column: 1 / -1; }
     .inventory { grid-template-columns: repeat(3, 1fr); }
+    .hobby { grid-template-columns: 1fr; }
   }
   @media (max-width: 640px) {
     body { padding: 20px 16px 36px; }
@@ -425,6 +439,25 @@
         <div class="big">📒</div>
         <h3>다이어리 꾸미기 시도하기</h3>
         <p>시도는 했다는 데 의의를 뒀습니다. 다꾸 재미 붙이기 어렵다..</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOBBY ===== -->
+  <section class="card">
+    <span class="tab blue">요즘 빠진 것 💫</span>
+    <div class="hobby">
+      <div class="item">
+        <div class="ico">☕</div>
+        <div><h3>라떼</h3><p>아침마다 과일과 함께 마실 따뜻한 오트라떼를 사오고 있어요!</p></div>
+      </div>
+      <div class="item">
+        <div class="ico">📺</div>
+        <div><h3>넷플릭스</h3><p>'푸른길' 시리즈를 시작했는데 꽤 무섭네요..</p></div>
+      </div>
+      <div class="item">
+        <div class="ico">🏃‍♀️</div>
+        <div><h3>운동</h3><p>사실 빠진 것 보다는 "빠져야 할 것" 인데요, 재미를 붙일 만한 종목이 뭐가 있을지 찾아보려구요!</p></div>
       </div>
     </div>
   </section>
